@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="imagenes" href="{{asset('img/favicon.ico')}}">
-    <title>JLDM | Web Dinamica</title>
+    <!-- <link rel="shortcut icon" type="imagenes" href="{{asset('img/favicon.ico')}}"> -->
+    <title>REYHOGAR | home</title>
 
     <!--LINNK-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
@@ -24,13 +24,13 @@
             @yield('navbar')
             @yield('banner')
         </section>
-    @yield('cards_service')
     @yield('title')
         <div class="body_cards">
             @yield('cards')
         </div>
-    @yield('title5')
-        @yield('Proveedores')
+    @yield('cards_service')
+    <!-- @yield('title5')
+        @yield('Proveedores') -->
     @yield('title2')
     @yield('products')
     @yield('footer')
@@ -47,10 +47,10 @@
     <script src="{{asset('js/typed.js') }}"></script>
     <script>
         var typed = new Typed('.type', {
-        strings: ['<span><i class="fas fa-paint-brush"></i></span> RESPONSIVE', 
-                    '<span><i class="fas fa-building"></i></span> DINAMICA'
-                    ,'<span><i class="fas fa-coffee"></i></span> FOLLOW ME'],
-        typeSpeed:60,backSpeed:60,loop:true});
+        strings: ['<span><i class="fas fa-building"></i></span> COMPRA', 
+                    '<span><i class="fas fa-building"></i></span> TU HOGAR'
+                    ,'<span><i class="fas fa-coffee"></i></span> CON NOSOTROS'],
+        typeSpeed:50,backSpeed:50,loop:true});
     </script>
 </body>
 </html>

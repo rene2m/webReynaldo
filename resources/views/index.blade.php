@@ -2,19 +2,19 @@
 @section('redes')
 <div class="red">
     <div id="facebook">
-        <a href="https://www.youtube.com/channel/UCuRgEjJgi9iZFCYVSASpXDw" target="none" class="fab fa-facebook-f "></a>
+        <a href="#" target="none" class="fab fa-facebook-f "></a>
     </div>
     <div id="instagram">
-        <a href="https://www.youtube.com/channel/UCuRgEjJgi9iZFCYVSASpXDw" target="none" class="fab fa-instagram"></a>
+        <a href="#" target="none" class="fab fa-instagram"></a>
     </div>
     <div id="twiter">
         <a href="" target="none" class="fab fa-twitter-square"></a>
     </div>
     <div id="whatsaap">
-        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="none" class="fab fa-whatsapp"></a>
+        <a href="#" target="none" class="fab fa-whatsapp"></a>
     </div>
     <div id="linkeding">
-        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="none" class="fab fa-linkedin"></a>
+        <a href="#" target="none" class="fab fa-linkedin"></a>
     </div>
 </div>
 @endsection
@@ -24,11 +24,11 @@
         <div class="d-inline-flex ml-auto">
             <div class="headcont">
                 <i class="fas fa-2x fa-mobile-alt messenge"></i>
-                +51 999-999-999
+                +591 63173664
             </div>
             <div class="headcont">
                 <i class="fas fa-2x fa-envelope messenge"></i>
-                prueba@gmail.com
+                reyHogar@gmail.com
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
 @section('navbar')
     <header>
     <a href="#" class="logo">
-        <h2 style="color: white" class="imgtamaño">JLDM</h2>
+        <h2 style="color: white" class="imgtamaño">REYHOGAR</h2>
         <!--<img  class="imgtamaño" src="{{ asset('img/jldm.png')}}" alt="JLDM ! Proyects">-->
     </a>
     <div class="menu-toggle" ></div>
@@ -58,15 +58,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hero-text">
-                        <h4>PAGINA <span>WEB</span></h4>
+                        <h4>INMOBILIARIA</h4>
 						<br>
 						<br>
-                        <h1 class="tipeo1">PRUEBA</h1>
+                        <h1 class="tipeo1">REY HOGAR</h1>
                         <h1 class="tipeo2"><span class="type"></span></h1>
-                        <div class="botonesinfo">
-                        <a href="" class="btn hero-btn">MAS INFORMACIÓN</a>
-                        <a href="{{ url('/productos')}}" class="btn hero-btn2 btn1">VER PRODUCTOS</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +98,7 @@
                     <i class="fas fa-user-check fa-4x"></i>
                     <h4 class="title_services">Clientes Satisfechos</h4>
                     <p class="description_services">Nuestros clientes felices con nuestro servicio</p>
-                    <a href="{{ url('/nosotros')}}" class="btn_modal_wel mt-5">Ver mas</a>  
+                    <a href="" class="btn_modal_wel mt-5" data-toggle="modal" data-target=".bd-example-modal-xl2">Ver mas</a>   
                 </div>
             </div>
         </div>
@@ -124,48 +120,48 @@
     <div class="row_cards">
         <div class="col-md-3 col-sm-6 mb-3">
             <div class="single-content">
-                <img src="{{ asset('img/categoria/cat1.jpg')}}" alt="Categorias Higienika Oficce Perú">
+                <img src="{{ asset('img/categoria/cat1.jpg')}}" alt="">
                 <div class="text-content">
-                    <h3>Productos de Celulares</h3>
+                    <h3>Casas</h3>
                     <hr class="style2">
-                    <h5>Para el hogar y oficina</h5>
+                    <h5>Para la Familia</h5>
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-sm-6 mb-3">
             <div class="single-content">
-                <img src="{{ asset('img/categoria/cat2.jpg')}}" alt="Categorias Higienika Oficce Perú">
+                <img src="{{ asset('img/categoria/cat2.jpg')}}" alt="">
                 <div class="text-content">
-                    <h3>Artículos de Oficina</h3>
+                    <h3>Apartamentos</h3>
                     <hr class="style2">
-                    <h5>Artículos de oficina de las mejores marcas</h5>
+                    <h5>En diferentes partes de la ciudad</h5>
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-sm-6 mb-3">
             <div class="single-content">
-                <img src="{{ asset('img/categoria/cat3.jpg')}}" alt="Categorias Higienika Oficce Perú">
+                <img src="{{ asset('img/categoria/cat3.jpg')}}" alt="">
                 <div class="text-content">
-                    <h3>Repuestos De Moviles</h3>
+                    <h3>Locales  Comerciales</h3>
                     <hr class="style2">
-                    <h5>Distribuimos Partes y repuestos</h5>
+                    <h5>Para tu negocio</h5>
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-sm-6 mb-3">
             <div class="single-content">
-                <img src="{{ asset('img/categoria/cat4.jpg')}}" alt="Categorias Higienika Oficce Perú">
+                <img src="{{ asset('img/categoria/cat4.jpg')}}" alt="">
                 <div class="text-content">
-                    <h3>Artículos de Laptops</h3>
+                    <h3>Terrenos</h3>
                     <hr class="style2">
-                    <h5>Artículos Laptops de trabajo</h5>
+                    <h5>Para tu casa</h5>
                 </div>
             </div>
         </div>
     </div>
 </div>
 @endsection
-@section('title5')
+<!-- @section('title5')
 <div class="col-12 pt-2" style="background: #0781b6">
 		<div class="proveedor-title">
 			<h5 style="color: black">CONOCE A</h5>
@@ -173,8 +169,8 @@
             <hr class="style5">
 	    </div>
 </div>
-@endsection
-@section('Proveedores')
+@endsection -->
+<!-- @section('Proveedores')
 <div class="container_prove">
     <div class="carousel_prove">
         <div class="buttons_prove">
@@ -195,12 +191,12 @@
         @endforeach
     </div>
 </div>
-@endsection
+@endsection -->
 @section('title2')
 <div class="col-12">
 		<div class="testimonial-title">
-			<h5>CONOCE</h5>
-            <h3>NUESTROS PRODUCTOS</h3>
+			<h5>NUESTROS</h5>
+            <h3>INMUEBLES DESTACADOS </h3>
             <hr class="style1">
 	    </div>
 </div>
@@ -242,9 +238,9 @@
 <footer class="footer">
     <div class="l-footer">
         <!--<img  class="footer_img" src="{{asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
-        <h2 style="color: white" class="footer_img">JLDM</h2>
-    <p>Hola Soy JLDIAZ diseñador web esta pagina web esta totalmente gratis para que puedan implementar a algun proyecto universitario la unica de
-        condicon de uso es que mejoren algo a esta pagina web para que asi fortalezcan sus conocimientos.
+        <h2 style="color: white" class="footer_img">REYHOGAR</h2>
+    <p>Un grupo de profesionales te asesorarán en todo el proceso de VENTA, COMPRA y ALQUILER.
+       Te ofrecemos realizar un análisis de mercado para determinar el valor de tu propiedad.
     </p>
     </div>
         <ul class="r-footer">
@@ -253,7 +249,7 @@
                 <ul class="box">
                     <li class="button_social">
                         <i class="fab mr-2 fa-facebook"></i>
-                        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="_blank">Facebook</a>
+                        <a href="" target="_blank">Facebook</a>
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-twitter"></i>
@@ -261,11 +257,11 @@
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-instagram"></i>
-                        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="_blank">Instagram</a>
+                        <a href="h" target="_blank">Instagram</a>
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-linkedin-in"></i>
-                        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="_blank">Linkedin</a>
+                        <a href="" target="_blank">Linkedin</a>
                     </li>
                 </ul>
             </li>
@@ -284,7 +280,7 @@
                 </li>
         </ul>
         <div class="b-footer">
-            <p>Todos los Derechos reservados by <a href="https://josediazmirano.github.io/jldiaz/" target="_blank">©JLDIAZ-2020</a></p>
+            <p>Todos los Derechos reservados by ©REYHOGAR-2022</p>
         </div>
 </footer>
 @endsection
@@ -390,10 +386,10 @@
                 <img class="popou_img"src="{{ asset('img/entrega.jpg')}}" alt="">
             </div>       
             <div id="verde" class="content_pagos"> 
-                <h2 class=" frm_pagos text-center">REALIZAMOS DELIVERY ESPECIAL</h2>  
+                <h2 class=" frm_pagos text-center">REALIZAMOS ENTREGA ESPECIAL</h2>  
                 <hr class="style3">   
-                <h5>Primero se envía la cotización al cliente, luego de ello el cliente envía la orden de compra por medio de nuestro correo y a las 24 horas 
-                    se le realiza el envío de los productos dentro de Lima sin costo alguno, a provincia se aplica un adicional.</h5>                   
+                <h5>Primero se envía la cotización al cliente, luego de ello el cliente envía la orden de compra por medio de nuestro correo, se realiza la visita  
+                    a la propiedad seguidamente se realiza el deposito de garantia y finalmente la trasferencia de compra venta</h5>                   
             </div>
         </div>
     </div>

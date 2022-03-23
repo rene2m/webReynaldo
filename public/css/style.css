@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 #headerSection{
@@ -12,9 +13,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/jldm_slider.jpg);
-    background-attachment: fixed;
-    
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/jldm_slider.png);
+    background-attachment: fixed;    
 }
 #headerSection_nosotros{
     width: 100%;
@@ -66,7 +66,7 @@ header{
     max-width: 1200px;
     margin: 20px auto;
     padding: 10px;
-    background:  #0781b6;
+    background:  #729494;
     box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 18px;
@@ -113,7 +113,7 @@ nav ul li a{
 }
 nav ul li a.active,
 nav ul li a:hover{
-    background: #00a1e6;
+    background: #101111;
     color: white;
     transition: 0.5s;
     text-decoration-line:none;
@@ -134,20 +134,20 @@ nav ul li a:hover{
 .hero-text .tipeo1{
     font-size: 85px;
     font-family: 'Oswald', sans-serif;
-    margin-top: 40px;
-    color: white;
+    margin-top: 20px;
+    color: #729494;
     margin-bottom: 40px;
 }
 .hero-text .tipeo2{
     font-size: 85px;
     font-family: 'Oswald', sans-serif;
-    margin-top: 40px;
-    color:#0781b6;
-    margin-bottom: 80px;
+    margin-top: 20px;
+    color:#729494;
+    margin-bottom: 60px;
 }
-.botonesinfo{
+/* .botonesinfo{
     margin-top: 50px;
-}
+} */
 .botonesinfo .hero-btn{
     position: relative;
     display: inline-block;
@@ -192,7 +192,7 @@ nav ul li a:hover{
 #twiter a,
 #whatsaap a,
 #linkeding a{
-    background:#1f93c4a4;
+    background:#729494;
     padding: 15px 20px;
     color: #fff;
     text-decoration: none;
@@ -205,7 +205,7 @@ nav ul li a:hover{
 #twiter a:hover,
 #whatsaap a:hover,
 #linkeding a:hover{
-    background: #0781b6;
+    background: #111111;
     padding: 15px 40px;
     transition: 0.4s ease;
 
@@ -219,23 +219,27 @@ nav ul li a:hover{
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-top: 25px;
+    margin-top: 0px; /*espacio entre las card seccions */
     margin-right: -15px;
     margin-left: -15px;
+    /* background-color:#c3d3d3; */
     
 }
 .container_cards{
     width: 100%;
-    padding-right: 35px;
-    padding-left: 35px;
+    /* height: 100%; */
+    padding-right: 50px;
+    padding-left: 50px;
     margin-right: auto;
     margin-left: auto;
+    background-color:#c3d3d3;
 }
 .single-content_service{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
+    background-color: #98e6e6;
 }
 .service{
     margin: 10px;
@@ -246,9 +250,10 @@ nav ul li a:hover{
     transition: background-color 0.3s ease-in,
                 transform 0.3s ease-in;
     width: 250px;
+    /* background-color: red; */
 }
 .service:hover{
-    background-color: #1f93c4a4;
+    background-color: #798285a4;
     transform: translateY(-3px);
     -webkit-box-shadow: -25px 35px 29px -3px rgba(0,0,0,0.65); 
     box-shadow: -25px 35px 29px -3px rgba(0,0,0,0.65);
@@ -271,7 +276,7 @@ nav ul li a:hover{
 }
 .service > i{
     display: block;
-    color: #1f93c4a4;
+    color: #131414;
     font-size: 4rem;
     margin-bottom: 0.9rem;
     transition: color 0.3s ease-out;
@@ -306,11 +311,11 @@ nav ul li a:hover{
     font-size: 18px;
     letter-spacing: 2px;
     border-radius: 40px;
-    background: linear-gradient(90deg,#00a1e6,#0781b6);
+    background: linear-gradient(90deg,#0c0d0e,#212222);
 }
 .service:hover > .btn_modal_wel{
-    -webkit-box-shadow: inset 4px 4px 15px 0px #004b7e, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: inset 4px 4px 15px 0px #004b7e, 5px 5px 15px 5px rgba(0,0,0,0);
+    -webkit-box-shadow: inset 4px 4px 15px 0px #768996, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: inset 4px 4px 15px 0px #b6bfc5, 5px 5px 15px 5px rgba(0,0,0,0);
     transition: 0.3s;
     text-decoration: none;
     text-decoration-line:none;
@@ -444,15 +449,14 @@ nav ul li a:hover{
 .footer {
     display: flex;
     flex-flow: row wrap;
-    padding: 50px;
+    padding: 70px;
     color: #fff;
     background: linear-gradient(0deg, rgba(0,0,0,0.8491771708683473) 26%,
-                rgba(0, 109, 192, 0.808) 53%);
+                rgba(64, 78, 90, 0.808) 53%);
     background-repeat:no-repeat;
     background-size: 100% 100%;
     background-size: cover;
 }
-    
 .footer > * {
     flex:  1 100%;
 }
@@ -553,7 +557,7 @@ h2 {
 ************************************************/
 
 .style1{
-    background-color: #0781b6;
+    background-color: #171a1b;
     height: 5px;
     border-radius: 11px;
     margin-right: 0%;
@@ -598,7 +602,7 @@ h2 {
     margin-left: 40px;
 }
 .testimonial-title h5{
-    color: #0781b6;
+    color: #000000;
     font-size: 33;
     font-family: 'Poppins', sans-serif;
 }
@@ -612,7 +616,7 @@ h2 {
     margin-left: 40px;
 }
 .proveedor-title h5{
-    color: #0781b6;
+    color: #000000;
     font-size: 33;
     font-family: 'Poppins', sans-serif;
 }
@@ -861,7 +865,8 @@ textarea.contact_input{
 ************CARTAS DE CATEGORIAS****************
 ************************************************/
 .body_cards{
-    background: white;
+    background: #c3d3d3;
+    padding: 15px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -880,7 +885,7 @@ textarea.contact_input{
 .single-content::after{
     content: '';
     display: block;
-    background: #0781b6;
+    background: #183c6b;
     top: 20px;
     bottom: 20px;
     opacity: 0;
@@ -1060,7 +1065,7 @@ textarea.contact_input{
   .wrapper {
     width: 300px;
     height: 500px;
-    background: rgb(4, 154, 255);
+    background: rgb(55, 58, 145);
     margin: auto;
     position: relative;
     overflow: hidden;
