@@ -3,8 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
 #headerSection{
@@ -652,7 +651,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
 }
 .contact-form{
-    background-color:  #0781b6;
+    background-color:  #3a5b68;
     position: relative;
 }
 .contact-form::before{
@@ -660,7 +659,7 @@ h2 {
     position: absolute;
     width: 26px;
     height: 26px;
-    background-color:#0781b6;
+    background-color:#3a5b68;
     transform: rotate(45deg);
     top: 50px;
     left: -13px;
@@ -709,7 +708,7 @@ textarea.contact_input{
     background-color: white;
     border: 2px solid #fafafa;
     font-size: 0.95rem;
-    color: #0781b6;
+    color: #3a5b68;
     line-height: 1;
     border-radius: 20px;
     outline: none;
@@ -726,7 +725,7 @@ textarea.contact_input{
     position: relative;
 }
 .contact-info .contact_tittle{
-    color: #0781b6;
+    color: #3a5b68;
 }
 .contact-info .contact_text{
     color: black;
@@ -742,7 +741,7 @@ textarea.contact_input{
 .contact_information i{
     width: 28px;
     margin-right: 0.9rem;
-    color: #0781b6;
+    color: #3a5b68;
 }
 .contact_information p{
     margin-top: 0;
@@ -762,7 +761,7 @@ textarea.contact_input{
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #0781b6, #03577a); 
+    background: linear-gradient(45deg, #3a5b68, #3a5b68); 
     color: white;
     text-align: center;
     line-height: 35px;
@@ -771,7 +770,7 @@ textarea.contact_input{
 }
 .social-icons a:hover{
     transform: scale(1.05);
-    background: linear-gradient(45deg, #03577a, #0781b6); 
+    background: linear-gradient(45deg, #3a5b68, #3a5b68); 
 }
 /***********************************************
 ******************FODA**************************
@@ -800,7 +799,7 @@ textarea.contact_input{
     margin: 30px 0;
 }
 .nosotros_container .nosotros_card:hover{
-    border: 2px solid #0781b6;
+    border: 2px solid #536f7a;
 }
 .nosotros_container .nosotros_card .nosotros_imbBx{
     position: absolute;
@@ -808,7 +807,7 @@ textarea.contact_input{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0781b6;
+    background: #2ab38e;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -824,7 +823,7 @@ textarea.contact_input{
     top: calc(50% - 75px);
     border-radius: 20px;
     transition: 0.5s ease-in-out;
-    background: #00a1e6;
+    background: #2df5f1;
 }
 .nosotros_container .nosotros_card .nosotros_imbBx::before{
     content: attr(data-text);
@@ -1224,7 +1223,7 @@ textarea.contact_input{
   }
   .main  .title_category{
     font-size: 34px;
-    color: #04a5eb;
+    color: #4e928b;
   }
   .main img {
     height: auto;

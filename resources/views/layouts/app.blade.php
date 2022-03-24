@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="imagenes" href="{{asset('img/favicon.ico')}}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>JLDM |Panel administrativo</title>
+    <title>REYHOGAR |Panel administrativo</title>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
@@ -85,10 +85,10 @@
             <!-- Main Sidebar Container -->
             <aside class="main-sidebar bg-light elevation-4">
                 <!-- Brand Logo -->
-                <a href="{{ url('/') }}" class="brand-link">
-                    <img src="https://i.ibb.co/Z2shSJj/animado-Recuperado.png" alt="JLDIAZ logo" class="brand-image img-circle"
-                        style="opacity: .8">
-                    <span class="brand-text font-weight-light">JLDM</span>
+                <a href="{{ url('/home') }}" class="brand-link">
+                    <!-- <img src=" url(../img/jldm_slider.png)" alt="REYHOGAR logo" class="brand-image img-circle"
+                        style="opacity: .8"> -->
+                    <span class="brand-text font-weight-light">REYHOGAR</span>
                 </a>
 
                 <!-- Sidebar -->
@@ -173,7 +173,7 @@
                                     class="{{ Request::path() === 'ofertas/todas' ? 'nav-link active' : 'nav-link' }}">
                                     <i class="text-info fas fa-star"></i>
                                     <p>
-                                        Oferata del dia
+                                        Ofertas del dia
                                     </p>
                                 </a>
                             </li>
@@ -182,7 +182,7 @@
                                     class="{{ Request::path() === 'Categorias' ? 'nav-link active' : 'nav-link' }}">
                                     <i class="text-info fas fa-shopping-bag"></i>
                                     <p>
-                                       Categorias de Producto
+                                       Categorias de Inmueble
                                     </p>
                                 </a>
                             </li>
@@ -191,7 +191,7 @@
                                     class="{{ Request::path() === 'producto' ? 'nav-link active' : 'nav-link' }}">
                                     <i class="text-info fas fa-shopping-basket"></i>
                                     <p>
-                                      Productos
+                                      Inmuebles
                                       <?php $product_count = DB::table('productos')->count(); ?>
                                         <span class="right badge badge-danger">{{ $product_count ?? '0' }}</span>
                                     </p>
@@ -240,7 +240,7 @@
             <!-- /.content-wrapper -->
             <footer class="main-footer">
                 <!-- NO QUITAR -->
-                <strong> JLDIAZ
+                <strong> REYHOGAR
                     <div class="float-right d-none d-sm-inline-block">
                         <b>Version</b> 1.0
                     </div>

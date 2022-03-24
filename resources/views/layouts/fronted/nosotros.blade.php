@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-        <title>JLDM |Nosotros</title>
+        <title>REYHOGAR |Nosotros</title>
 
         <!-- Fonts--> 
         <link href="{{asset('css/style.css') }}" rel="stylesheet">
@@ -24,10 +24,10 @@
         <div>
             @yield('timespace')
         </div>
-        @yield('title')
+        <!-- @yield('title')
         <div class="body_clientes">
             @yield('clientes')
-        </div>
+        </div> -->
         @yield('title2')
         @yield('foda')    
         @yield('footer') 

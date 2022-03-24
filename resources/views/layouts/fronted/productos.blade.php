@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-        <title>JLDM |Productos</title>
+        <title>REYHOGAR |Productos</title>
 
         <!-- Fonts--> 
         <link href="{{asset('css/style.css') }}" rel="stylesheet">
@@ -26,7 +26,7 @@
         </section>
         @yield('title')
        
-            @yield('products')
+            <!-- @yield('products') -->
        
        @yield('footer')
        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
     <script src="{{asset('js/responsive.js') }}"></script>
     <script src="{{asset('js/security.js') }}"></script>
     <script src="{{asset('js/typed.js') }}"></script>
-    <script src="{{asset('js/producto.js') }}"></script>
+    <script src="{{asset('js/producto.js') }}"></script>    
     <script>
 	var typed = new Typed('.type', {
     strings: ['<span><i class="fas fa-check"></i></span> CELULARES', 

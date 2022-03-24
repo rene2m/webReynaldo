@@ -2,19 +2,19 @@
 @section('redes')
 <div class="red">
     <div id="facebook">
-        <a href="https://www.youtube.com/channel/UCuRgEjJgi9iZFCYVSASpXDw" target="none" class="fab fa-facebook-f "></a>
+        <a href="#" target="none" class="fab fa-facebook-f "></a>
     </div>
     <div id="instagram">
-        <a href="https://www.youtube.com/channel/UCuRgEjJgi9iZFCYVSASpXDw" target="none" class="fab fa-instagram"></a>
+        <a href="#" target="none" class="fab fa-instagram"></a>
     </div>
     <div id="twiter">
         <a href="" target="none" class="fab fa-twitter-square"></a>
     </div>
     <div id="whatsaap">
-        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="none" class="fab fa-whatsapp"></a>
+        <a href="#" target="none" class="fab fa-whatsapp"></a>
     </div>
     <div id="linkeding">
-        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="none" class="fab fa-linkedin"></a>
+        <a href="#" target="none" class="fab fa-linkedin"></a>
     </div>
 </div>
 @endsection
@@ -24,11 +24,11 @@
         <div class="d-inline-flex ml-auto">
             <div class="headcont">
                 <i class="fas fa-2x fa-mobile-alt messenge"></i>
-                +51 999-999-999
+                +591 63173664
             </div>
             <div class="headcont">
                 <i class="fas fa-2x fa-envelope messenge"></i>
-                jldm605@gmail.com
+                reyHogar@gmail.com
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
 @section('navbar')
     <header>
     <a href="#" class="logo">
-        <h2 style="color: white" class="imgtamaño">JLDM</h2>
+        <h2 style="color: white" class="imgtamaño">REYHOGAR</h2>
         <!--<img  class="imgtamaño" src="{{ asset('img/Logo_jldm.png')}}" alt="JLDM ! Proyects">-->
     </a>
     <div class="menu-toggle" ></div>
@@ -58,11 +58,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hero-text">
-                        <h4>PAGINA <span>WEB</span></h4>
+                        <h4>INMOBILIARIA</h4>
 						<br>
 						<br>
                         <h1 class="tipeo1">COMUNÍCATE CON NOSOTROS</h1>
-                        <h1 class="tipeo2"><span class="type"></span></h1>
+                        <!-- <h1 class="tipeo2"><span class="type"></span></h1> -->
                     </div>
                 </div>
             </div>
@@ -79,8 +79,7 @@
         <div class="nosotros_content">
             <div>
                 <h3>¿Quienes somos?</h3>
-                <p>Hola Soy JLDIAZ diseñador web esta pagina web esta totalmente gratis para que puedan implementar a algun proyecto universitario la unica de
-                    condicon de uso es que mejoren algo a esta pagina web para que asi fortalezcan sus conocimientos.
+                <p>Somos una empresa de Bienes Raíces fundada en el año 2021, contamos con un equipo especializado de profesionales inmobiliarios, donde te damos un servicio de atención personalizada y profesional, en la compra, venta y renta de inmuebles.
                 </p>
             </div>
         </div>
@@ -93,7 +92,7 @@
         <div class="nosotros_content">
             <div>
                 <h3>Nuestra Misión</h3>
-                <p>Establecer una relación con nuestros clientes distribuyendo nuestros productos con eficiencia,rapidez, buenos precios y buscando la mejora continua para contribuir con su desarrollo y el de nuestros colaboradores.
+                <p>Establecer una relación con nuestros clientes a traves de la comopra y venta de nuestro inmuebles con eficiencia,rapidez, buenos precios y buscando la mejora continua para contribuir con su desarrollo y el de nuestros colaboradores.
                 </p>
             </div>
         </div>
@@ -106,7 +105,7 @@
         <div class="nosotros_content">
             <div>
                 <h3>Nuestra Visión</h3>
-                <p>Consolidarnos como una de las empresas líderes en distribución de artículos no estratégicos a nivel nacional,
+                <p>Consolidarnos como una de las empresas líderes en compra y venta de bienes inmuebles a nivel nacional,
                     reconocida por su compromiso y responsabilidad.
                 </p>
             </div>
@@ -120,7 +119,7 @@
         <div class="nosotros_content">
             <div>
                 <h3>¿Porque escogernos?</h3>
-                <p>Contamos con una amplia experiencia en ventas de productos y a los mejores precios de fábrica para la satisfacción del cliente. 
+                <p>Contamos con una amplia experiencia en ventas de departamentos, casas , terrenios y a los mejores precios del mercado para la satisfacción de nuestros clientes. 
                 </p>
             </div>
         </div>
@@ -128,7 +127,7 @@
 </div>
 </div>
 @endsection
-@section('clientes')
+<!-- @section('clientes')
     <div class="swiper-container">
         <div class="swiper-wrapper">
             @foreach($clientes as $cliente)
@@ -138,14 +137,14 @@
             @endforeach  
         </div>
     </div>   
-@endsection 
+@endsection  -->
 @section('footer')
 <footer class="footer">
     <div class="l-footer">
         <!--<img  class="footer_img" src="{{asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
-        <h2 style="color: white" class="footer_img">JLDM</h2>
-    <p>Hola Soy JLDIAZ diseñador web esta pagina web esta totalmente gratis para que puedan implementar a algun proyecto universitario la unica de
-        condicon de uso es que mejoren algo a esta pagina web para que asi fortalezcan sus conocimientos.
+        <h2 style="color: white" class="footer_img">REYHOGAR</h2>
+    <p>Un grupo de profesionales te asesorarán en todo el proceso de VENTA, COMPRA y ALQUILER.
+       Te ofrecemos realizar un análisis de mercado para determinar el valor de tu propiedad.
     </p>
     </div>
         <ul class="r-footer">
@@ -154,7 +153,7 @@
                 <ul class="box">
                     <li class="button_social">
                         <i class="fab mr-2 fa-facebook"></i>
-                        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="_blank">Facebook</a>
+                        <a href="" target="_blank">Facebook</a>
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-twitter"></i>
@@ -162,11 +161,11 @@
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-instagram"></i>
-                        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="_blank">Instagram</a>
+                        <a href="h" target="_blank">Instagram</a>
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-linkedin-in"></i>
-                        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="_blank">Linkedin</a>
+                        <a href="" target="_blank">Linkedin</a>
                     </li>
                 </ul>
             </li>
@@ -180,12 +179,12 @@
             <li class="features">
                 <h2>Procedimiento de Pagos</h2>
                 <ul class="box">
-                    <li><a type="button" href="#">Ver mas</a></li>
+                    <li><a type="button" class="btn btn-outline-info"  data-toggle="modal" data-target=".bd-example-modal-xl" href="#">Ver mas</a></li>
                 </ul>
                 </li>
         </ul>
         <div class="b-footer">
-            <p>Todos los Derechos reservados by <a href="https://josediazmirano.github.io/jldiaz/" target="_blank">©JLDIAZ-2020</a></p>
+            <p>Todos los Derechos reservados by ©REYHOGAR-2022</p>
         </div>
 </footer>
 @endsection
