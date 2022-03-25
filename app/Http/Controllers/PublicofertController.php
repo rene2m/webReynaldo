@@ -13,7 +13,7 @@ class PublicofertController extends Controller
         return view('ofertas.todas.index',['ofertas' => publicofert::all()]);
     }
     public function ofertas(){
-        $ofertas = publicofert::all();
+        $ofertas = Publicofert::all();
         $productos = Productos::all();
         $proveedores = Proveedores::all();
     
