@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Publicofert extends Model
 {
-    use HasFactory;
+    protected $guarded = [];
 }

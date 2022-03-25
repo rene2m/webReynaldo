@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Productos;
 use App\Models\Proveedores;
 use Illuminate\Http\Request;
-use App\Models\Publicofert;
+use App\Models\publicofert;
 class PublicofertController extends Controller
 { 
     public function index(){
@@ -13,7 +13,8 @@ class PublicofertController extends Controller
         return view('ofertas.todas.index',['ofertas' => Publicofert::all()]);
     }
     public function ofertas(){
-        $ofertas = Publicofert::all();
+        $ofertas = publicofert::all();
+        // dd($ofertas);
         $productos = Productos::all();
         $proveedores = Proveedores::all();
     
