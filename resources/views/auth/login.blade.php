@@ -81,22 +81,15 @@
             <div class="contactos_info">
                 <div class="contact_information">
                     <i class="fas fa-2x fa-user"></i>
-                    <p>jldm605@gmail.com</p>
+                    <p>reyhogar@gmail.com</p>
                 </div>
-                <div class="contact_information">
-                    <i class="fas fa-2x fa-user"></i>
-                    <p>999999999</p>
-                </div>
-                <div class="contact_information">
-                    <i class="fas fa-2x fa-user"></i>
-                    <p>9990-89095</p>
-                </div>
+              
             </div>
             <div class="social_media">
                 <p>Atte:</p>
                 <div class="social-icons">
                         <img src="{{secure_asset('img/favicon_higienika_office_peru.png')}}" alt="">
-                        <p>Higienika Oficce Perú</p>
+                        <p>REYHOGAR</p>
                 </div>
             </div>
         </div>
