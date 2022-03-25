@@ -10,7 +10,7 @@ class PublicofertController extends Controller
 { 
     public function index(){
         //return view('clientes.todas.index', ['clientes' => Clientes::all()->where('user_id',auth()->id())]);
-        return view('ofertas.todas.index',['ofertas' => Publicofert::all()]);
+        return view('ofertas.todas.index',['ofertas' => publicofert::all()]);
     }
     public function ofertas(){
         $ofertas = publicofert::all();
@@ -23,7 +23,7 @@ class PublicofertController extends Controller
     }
     public function store(Request $request)
     {
-        $oferta = new Publicofert();
+        $oferta = new publicofert();
             
         $oferta->user_id = auth()->id();
         $oferta->titulo = request('titulo');
@@ -38,11 +38,11 @@ class PublicofertController extends Controller
     }
     public function edit($id)
     {
-        return view('ofertas.todas.edit',['oferta' => Publicofert::findOrFail($id)]);
+        return view('ofertas.todas.edit',['oferta' => publicofert::findOrFail($id)]);
     }
     public function update(Request $request,$id)
     {
-        $oferta = Publicofert::findOrFail($id);
+        $oferta = publicofert::findOrFail($id);
         $oferta->titulo = request('titulo'); 
         $oferta->texto = request('texto');
         if($request->hasFile('image')){
@@ -56,7 +56,7 @@ class PublicofertController extends Controller
 
     public function destroy($id)
     {
-        $oferta = Publicofert::findOrFail($id);
+        $oferta = publicofert::findOrFail($id);
         unlink(public_path('img/ofertas/'.$oferta->image));
         $oferta->delete();
         return redirect('ofertas/todas');
