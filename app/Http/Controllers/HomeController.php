@@ -31,7 +31,7 @@ class HomeController extends Controller
         $cons_ofertas = publicofert::count();
         $cons_productos = Productos::count();
         $cons_clientes = Clientes::count();
-        dd($cons_ofertas);
+        // dd($cons_ofertas);
         return view('home',compact('cons_user','cons_ofertas','cons_productos','cons_clientes'));
     }
 }
