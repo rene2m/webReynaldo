@@ -115,7 +115,7 @@ return /******/ (function(modules) { // webpackBootstrap
   $.extend($.summernote.lang, {
     'it-IT': {
       font: {
-        bold: 'Testo in grassetto',
+        bold: 'Testo in grsecure_assetto',
         italic: 'Testo in corsivo',
         underline: 'Testo sottolineato',
         clear: 'Elimina la formattazione del testo',

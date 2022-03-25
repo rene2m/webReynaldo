@@ -42,7 +42,7 @@
         <label for="image">Imagen</label><br>
             {{Form::file('image')}}
             @if($producto->image != "")
-                <img src="{{asset('/img/productos/'.$producto->image)}}" alt="{{$producto->image}}" height="250px" width="50px" class="card-img-top">
+                <img src="{{secure_asset('/img/productos/'.$producto->image)}}" alt="{{$producto->image}}" height="250px" width="50px" class="card-img-top">
             @endif
     </div>
     <div class="card-header">

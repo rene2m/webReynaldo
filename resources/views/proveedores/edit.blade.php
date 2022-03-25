@@ -27,7 +27,7 @@
         <br>
             {{Form::file('image')}}
             @if($proveedore->image != "")
-            <img src="{{asset('/img/proveedore/'.$proveedore->image)}}" alt="{{$proveedore->name}}" height="300px" width="50px" class="card-img-top">
+            <img src="{{secure_asset('/img/proveedore/'.$proveedore->image)}}" alt="{{$proveedore->name}}" height="300px" width="50px" class="card-img-top">
             @endif
     </div>
     <div class="card-footer text-muted small">

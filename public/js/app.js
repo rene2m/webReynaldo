@@ -38455,7 +38455,7 @@ function once (fn) {
 
 var SSR_ATTR = 'data-server-rendered';
 
-var ASSET_TYPES = [
+var secure_asset_TYPES = [
   'component',
   'directive',
   'filter'
@@ -39407,13 +39407,13 @@ LIFECYCLE_HOOKS.forEach(function (hook) {
 });
 
 /**
- * Assets
+ * secure_assets
  *
  * When a vm is present (instance creation), we need to do
  * a three-way merge between constructor options, instance
  * options and parent options.
  */
-function mergeAssets (
+function mergesecure_assets (
   parentVal,
   childVal,
   vm,
@@ -39428,8 +39428,8 @@ function mergeAssets (
   }
 }
 
-ASSET_TYPES.forEach(function (type) {
-  strats[type + 's'] = mergeAssets;
+secure_asset_TYPES.forEach(function (type) {
+  strats[type + 's'] = mergesecure_assets;
 });
 
 /**
@@ -39668,11 +39668,11 @@ function mergeOptions (
 }
 
 /**
- * Resolve an asset.
+ * Resolve an secure_asset.
  * This function is used because child instances need access
- * to assets defined in its ancestor chain.
+ * to secure_assets defined in its ancestor chain.
  */
-function resolveAsset (
+function resolvesecure_asset (
   options,
   type,
   id,
@@ -39682,15 +39682,15 @@ function resolveAsset (
   if (typeof id !== 'string') {
     return
   }
-  var assets = options[type];
+  var secure_assets = options[type];
   // check local registration variations first
-  if (hasOwn(assets, id)) { return assets[id] }
+  if (hasOwn(secure_assets, id)) { return secure_assets[id] }
   var camelizedId = camelize(id);
-  if (hasOwn(assets, camelizedId)) { return assets[camelizedId] }
+  if (hasOwn(secure_assets, camelizedId)) { return secure_assets[camelizedId] }
   var PascalCaseId = capitalize(camelizedId);
-  if (hasOwn(assets, PascalCaseId)) { return assets[PascalCaseId] }
+  if (hasOwn(secure_assets, PascalCaseId)) { return secure_assets[PascalCaseId] }
   // fallback to prototype chain
-  var res = assets[id] || assets[camelizedId] || assets[PascalCaseId];
+  var res = secure_assets[id] || secure_assets[camelizedId] || secure_assets[PascalCaseId];
   if (warnMissing && !res) {
     warn(
       'Failed to resolve ' + type.slice(0, -1) + ': ' + id,
@@ -40809,7 +40809,7 @@ function renderSlot (
  * Runtime helper for resolving filters
  */
 function resolveFilter (id) {
-  return resolveAsset(this.$options, 'filters', id, true) || identity
+  return resolvesecure_asset(this.$options, 'filters', id, true) || identity
 }
 
 /*  */
@@ -41523,7 +41523,7 @@ function _createElement (
         config.parsePlatformTagName(tag), data, children,
         undefined, undefined, context
       );
-    } else if ((!data || !data.pre) && isDef(Ctor = resolveAsset(context.$options, 'components', tag))) {
+    } else if ((!data || !data.pre) && isDef(Ctor = resolvesecure_asset(context.$options, 'components', tag))) {
       // component
       vnode = createComponent(Ctor, data, context, children, tag);
     } else {
@@ -43270,9 +43270,9 @@ function initExtend (Vue) {
     Sub.mixin = Super.mixin;
     Sub.use = Super.use;
 
-    // create asset registers, so extended classes
-    // can have their private assets too.
-    ASSET_TYPES.forEach(function (type) {
+    // create secure_asset registers, so extended classes
+    // can have their private secure_assets too.
+    secure_asset_TYPES.forEach(function (type) {
       Sub[type] = Super[type];
     });
     // enable recursive self-lookup
@@ -43309,11 +43309,11 @@ function initComputed$1 (Comp) {
 
 /*  */
 
-function initAssetRegisters (Vue) {
+function initsecure_assetRegisters (Vue) {
   /**
-   * Create asset registration methods.
+   * Create secure_asset registration methods.
    */
-  ASSET_TYPES.forEach(function (type) {
+  secure_asset_TYPES.forEach(function (type) {
     Vue[type] = function (
       id,
       definition
@@ -43509,7 +43509,7 @@ function initGlobalAPI (Vue) {
   };
 
   Vue.options = Object.create(null);
-  ASSET_TYPES.forEach(function (type) {
+  secure_asset_TYPES.forEach(function (type) {
     Vue.options[type + 's'] = Object.create(null);
   });
 
@@ -43522,7 +43522,7 @@ function initGlobalAPI (Vue) {
   initUse(Vue);
   initMixin$1(Vue);
   initExtend(Vue);
-  initAssetRegisters(Vue);
+  initsecure_assetRegisters(Vue);
 }
 
 initGlobalAPI(Vue);
@@ -44756,7 +44756,7 @@ function normalizeDirectives$1 (
       dir.modifiers = emptyModifiers;
     }
     res[getRawDirName(dir)] = dir;
-    dir.def = resolveAsset(vm.$options, 'directives', dir.name, true);
+    dir.def = resolvesecure_asset(vm.$options, 'directives', dir.name, true);
   }
   // $flow-disable-line
   return res

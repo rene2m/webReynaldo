@@ -127,7 +127,7 @@ final class EnglishInflector implements InflectorInterface
         // edges (edge)
         ['segd', 4, true, true, 'dge'],
 
-        // roses (rose), garages (garage), cassettes (cassette),
+        // roses (rose), garages (garage), csecure_assettes (csecure_assette),
         // waltzes (waltz), heroes (hero), bushes (bush), arches (arch),
         // shoes (shoe)
         ['se', 2, true, true, ['', 'e']],

@@ -21,7 +21,7 @@
         <div class="card mb-3" style="max-width: 650px;">
             <div class="row no-gutters">
                 <div class="col-md-6">
-                    <img src="{{ asset('dist/img/avatar5.png')}}" class="card-img-top" alt="User Image">
+                    <img src="{{ secure_asset('dist/img/avatar5.png')}}" class="card-img-top" alt="User Image">
                 </div>
                 <div class="col-md-6">
                 <div class="card-body">

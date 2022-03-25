@@ -144,11 +144,11 @@ class ErrorPageViewModel implements Arrayable
         return json_encode($data, $jsonOptions);
     }
 
-    public function getAssetContents(string $asset): string
+    public function getsecure_assetContents(string $secure_asset): string
     {
-        $assetPath = __DIR__."/../../resources/compiled/{$asset}";
+        $secure_assetPath = __DIR__."/../../resources/compiled/{$secure_asset}";
 
-        return file_get_contents($assetPath);
+        return file_get_contents($secure_assetPath);
     }
 
     public function styles(): array
@@ -190,7 +190,7 @@ class ErrorPageViewModel implements Arrayable
             'scripts' => $this->scripts(),
             'tabs' => $this->tabs(),
             'jsonEncode' => Closure::fromCallable([$this, 'jsonEncode']),
-            'getAssetContents' => Closure::fromCallable([$this, 'getAssetContents']),
+            'getsecure_assetContents' => Closure::fromCallable([$this, 'getsecure_assetContents']),
             'defaultTab' => $this->defaultTab,
             'defaultTabProps' => $this->defaultTabProps,
             'appEnv' => $this->appEnv,

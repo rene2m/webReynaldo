@@ -21,7 +21,7 @@ abstract class Tab implements JsonSerializable
 
     public function __construct()
     {
-        $this->registerAssets();
+        $this->registersecure_assets();
     }
 
     public function name(): string
@@ -55,7 +55,7 @@ abstract class Tab implements JsonSerializable
         return $this;
     }
 
-    abstract protected function registerAssets();
+    abstract protected function registersecure_assets();
 
     public function meta(): array
     {

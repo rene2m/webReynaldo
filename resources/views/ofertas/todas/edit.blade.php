@@ -30,7 +30,7 @@
         <br>
             {{Form::file('image')}}
             @if($oferta->image != "")
-                <img src="{{asset('/img/ofertas/'.$oferta->image)}}" alt="{{$oferta->titulo}}" height="300px" width="50px" class="card-img-top">
+                <img src="{{secure_asset('/img/ofertas/'.$oferta->image)}}" alt="{{$oferta->titulo}}" height="300px" width="50px" class="card-img-top">
             @endif
     </div>
     <div class="card-footer text-muted small">

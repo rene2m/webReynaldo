@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="shortcut icon" type="imagenes" href="{{asset('img/favicon.ico')}}"> -->
+    <!-- <link rel="shortcut icon" type="imagenes" href="{{secure_asset('img/favicon.ico')}}"> -->
     <title>REYHOGAR | home</title>
 
     <!--LINNK-->
@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
 
     <!-- Styles -->
-    <link type="text/css" href="{{asset('css/style.css') }}" rel="stylesheet">
-    <link type="text/css" href="{{asset('css/slick.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{secure_asset('css/style.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{secure_asset('css/slick.css') }}" rel="stylesheet">
 </head>
 <body> 
     @yield('redes')
@@ -40,11 +40,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="{{asset('js/hgnka.js') }}"></script>
-    <script src="{{asset('js/security.js') }}"></script>
-    <script src="{{asset('js/provee.js') }}"></script>
-    <script src="{{asset('js/slick.min.js') }}"></script>
-    <script src="{{asset('js/typed.js') }}"></script>
+    <script src="{{secure_asset('js/hgnka.js') }}"></script>
+    <script src="{{secure_asset('js/security.js') }}"></script>
+    <script src="{{secure_asset('js/provee.js') }}"></script>
+    <script src="{{secure_asset('js/slick.min.js') }}"></script>
+    <script src="{{secure_asset('js/typed.js') }}"></script>
     <script>
         var typed = new Typed('.type', {
         strings: ['<span><i class="fas fa-building"></i></span> COMPRA', 

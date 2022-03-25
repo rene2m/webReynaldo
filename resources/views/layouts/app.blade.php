@@ -4,23 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="imagenes" href="{{asset('img/favicon.ico')}}">
+    <link rel="shortcut icon" type="imagenes" href="{{secure_asset('img/favicon.ico')}}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>REYHOGAR |Panel administrativo</title>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ secure_asset('js/app.js') }}" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="{{ asset('dist/js/adminlte.js') }}"></script>
+    <script src="{{ secure_asset('dist/js/adminlte.js') }}"></script>
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('plugins/fontawesome-free/css/all.min.css') }}">
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- Styles -->
-    <link href="{{ asset('dist/css/adminlte.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('dist/css/adminlte.min.css') }}" rel="stylesheet">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -96,7 +96,7 @@
                     <!-- Sidebar user panel (optional) -->
                     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                         <div class="image">
-                            <img src="{{ asset('dist/img/avatar5.png')}}" class="img-circle elevation-2" alt="User Image">
+                            <img src="{{ secure_asset('dist/img/avatar5.png')}}" class="img-circle elevation-2" alt="User Image">
                         </div>
                         <div class="info">
                             <a href="#" class="d-block">
@@ -253,7 +253,7 @@
             <!-- /.control-sidebar -->
         </div>
     </div>
-    <script src="{{asset('js/responsive.js') }}"></script>
+    <script src="{{secure_asset('js/responsive.js') }}"></script>
     <script>
         function countChars(obj){
         document.getElementById("charNum").innerHTML = obj.value.length+' caracteres';}

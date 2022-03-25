@@ -902,7 +902,7 @@ trait HasAttributes
         // First we will check for the presence of a mutator for the set operation
         // which simply lets the developers tweak the attribute as it is set on
         // this model, such as "json_encoding" a listing of data for storage.
-        if ($this->hasSetMutator($key)) {
+        if ($this->hsecure_assetMutator($key)) {
             return $this->setMutatedAttributeValue($key, $value);
         } elseif ($this->hasAttributeSetMutator($key)) {
             return $this->setAttributeMarkedMutatedAttributeValue($key, $value);
@@ -953,7 +953,7 @@ trait HasAttributes
      * @param  string  $key
      * @return bool
      */
-    public function hasSetMutator($key)
+    public function hsecure_assetMutator($key)
     {
         return method_exists($this, 'set'.Str::studly($key).'Attribute');
     }

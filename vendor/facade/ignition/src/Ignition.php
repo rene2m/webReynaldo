@@ -36,7 +36,7 @@ class Ignition
             ->toArray();
     }
 
-    public static function registerAssets(Closure $callable)
+    public static function registersecure_assets(Closure $callable)
     {
         static::$callBeforeShowingErrorPage[] = $callable;
     }

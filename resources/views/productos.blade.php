@@ -38,7 +38,7 @@
     <header>
     <a href="#" class="logo">
         <h2 style="color: white" class="imgtamaño">REYHOGAR</h2>
-        <!--<img  class="imgtamaño" src="{{ asset('img/Logo-Higienika_office_peru_div.png')}}" alt="JLDM ! Proyects">-->
+        <!--<img  class="imgtamaño" src="{{ secure_asset('img/Logo-Higienika_office_peru_div.png')}}" alt="JLDM ! Proyects">-->
     </a>
     <div class="menu-toggle" ></div>
         <nav>
@@ -76,7 +76,7 @@
             <div class="product-grid8">
                 <div class="product-image8">
                     <a href="#">
-                        <img  class="pic-1" src="{{asset('/img/productos/'.$producto->image)}}" alt="{{$producto->image}}">
+                        <img  class="pic-1" src="{{secure_asset('/img/productos/'.$producto->image)}}" alt="{{$producto->image}}">
                         <!--<img class="pic-2" src="https://via.placeholder.com/280x300/FFF5EE/000000">-->
                     </a>
                     <ul class="social">
@@ -100,7 +100,7 @@
 @section('footer')
 <footer class="footer">
     <div class="l-footer">
-        <!--<img  class="footer_img" src="{{asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
+        <!--<img  class="footer_img" src="{{secure_asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
         <h2 style="color: white" class="footer_img">REYHOGAR</h2>
     <p>Un grupo de profesionales te asesorarán en todo el proceso de VENTA, COMPRA y ALQUILER.
        Te ofrecemos realizar un análisis de mercado para determinar el valor de tu propiedad.

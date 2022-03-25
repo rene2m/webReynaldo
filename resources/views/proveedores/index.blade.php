@@ -23,7 +23,7 @@
         <div class="card mb-3 " style="max-width: 540px;">
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <img src="{{asset('/img/proveedore/'.$proveedore->image)}}" alt="{{$proveedore->image}}" class="card-img-top" height="250" >
+                    <img src="{{secure_asset('/img/proveedore/'.$proveedore->image)}}" alt="{{$proveedore->image}}" class="card-img-top" height="250" >
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">

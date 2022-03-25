@@ -48,7 +48,7 @@
 
 <div id="app"></div>
 
-<script><?= $getAssetContents('ignition.js') ?></script>
+<script><?= $getsecure_assetContents('ignition.js') ?></script>
 <script>
     window.Ignition = window.ignite(window.data);
 </script>

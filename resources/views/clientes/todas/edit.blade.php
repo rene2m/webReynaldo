@@ -26,7 +26,7 @@
         <label>Imagen</label><br>
             {{Form::file('image')}}
             @if($cliente->image != "")
-                <img src="{{asset('/img/clientes/'.$cliente->image)}}" alt="{{$cliente->image}}" height="150px" width="50px" class="card-img-top">
+                <img src="{{secure_asset('/img/clientes/'.$cliente->image)}}" alt="{{$cliente->image}}" height="150px" width="50px" class="card-img-top">
             @endif
     </div>
     <div class="card-footer text-muted small">

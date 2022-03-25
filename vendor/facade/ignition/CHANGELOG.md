@@ -378,7 +378,7 @@ All notable changes to `ignition` will be documented in this file
 
 ## 1.8.1 - 2019-09-20
 
-- Revert javascript assets via URL - Fixes #161
+- Revert javascript secure_assets via URL - Fixes #161
 
 ## 1.8.0 - 2019-09-18
 
@@ -403,11 +403,11 @@ All notable changes to `ignition` will be documented in this file
 
 ## 1.6.8 - 2019-09-18
 
-- Use javascript content type for asset response - fixes [#149](https://github.com/facade/ignition/issues/149)
+- Use javascript content type for secure_asset response - fixes [#149](https://github.com/facade/ignition/issues/149)
 
 ## 1.6.7 - 2019-09-18
 
-- Load javascript assets via URL. Fixes [#16](https://github.com/facade/ignition/issues/16)
+- Load javascript secure_assets via URL. Fixes [#16](https://github.com/facade/ignition/issues/16)
 
 ## 1.6.6 - 2019-09-16
 

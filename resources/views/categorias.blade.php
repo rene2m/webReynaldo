@@ -38,7 +38,7 @@
     <header>
     <a href="#" class="logo">
         <h2 style="color: white" class="imgtamaño">REYHOGAR</h2>
-        <!--<img  class="imgtamaño" src="{{ asset('img/jldm.png')}}" alt="JLDM ! Proyects">-->
+        <!--<img  class="imgtamaño" src="{{ secure_asset('img/jldm.png')}}" alt="JLDM ! Proyects">-->
     </a>
     <div class="menu-toggle" ></div>
         <nav>
@@ -75,7 +75,7 @@
         @foreach($categorias as $categoria)
       <li class="cards_item">
         <div class="card">
-          <div class="card_image"><img  src="{{ asset('img/jldm_slider.jpg')}}" height="100"></div>
+          <div class="card_image"><img  src="{{ secure_asset('img/jldm_slider.jpg')}}" height="100"></div>
           <div class="card_content">
             <h1 class="card_title">{{$categoria->name}}</h1>
             <hr>
@@ -94,7 +94,7 @@
 @section('footer')
 <footer class="footer">
     <div class="l-footer">
-        <!--<img  class="footer_img" src="{{asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
+        <!--<img  class="footer_img" src="{{secure_asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
         <h2 style="color: white" class="footer_img">REYHOGAR</h2>
     <p>Un grupo de profesionales te asesorarán en todo el proceso de VENTA, COMPRA y ALQUILER.
        Te ofrecemos realizar un análisis de mercado para determinar el valor de tu propiedad.

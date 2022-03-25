@@ -95,7 +95,7 @@
             <div class="social_media">
                 <p>Atte:</p>
                 <div class="social-icons">
-                        <img src="{{asset('img/favicon_higienika_office_peru.png')}}" alt="">
+                        <img src="{{secure_asset('img/favicon_higienika_office_peru.png')}}" alt="">
                         <p>Higienika Oficce Perú</p>
                 </div>
             </div>

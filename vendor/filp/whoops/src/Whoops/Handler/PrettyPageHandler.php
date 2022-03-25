@@ -223,7 +223,7 @@ class PrettyPageHandler extends Handler
         $vars = [
             "page_title" => $this->getPageTitle(),
 
-            // @todo: Asset compiler
+            // @todo: secure_asset compiler
             "stylesheet" => file_get_contents($cssFile),
             "zepto"      => file_get_contents($zeptoFile),
             "prismJs"   => file_get_contents($prismJs),

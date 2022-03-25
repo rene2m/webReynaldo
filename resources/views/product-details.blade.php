@@ -38,7 +38,7 @@
     <header>
     <a href="#" class="logo">
         <h2 style="color: white" class="imgtamaño">JLDM</h2>
-        <!--<img  class="imgtamaño" src="{{ asset('img/Logojldm.png')}}" alt="JLDM ! Proyects">-->
+        <!--<img  class="imgtamaño" src="{{ secure_asset('img/Logojldm.png')}}" alt="JLDM ! Proyects">-->
     </a>
     <div class="menu-toggle" ></div>
         <nav>
@@ -70,7 +70,7 @@
 @section('content')
 <main class="container_product">
     <div class="left-column">
-        <img data-image="red" class="active" src="{{asset('/img/productos/'.$producto->image)}}">
+        <img data-image="red" class="active" src="{{secure_asset('/img/productos/'.$producto->image)}}">
     </div>
     <!-- Right Column -->
     <div class="right-column">
@@ -107,7 +107,7 @@
 </main><br><br>
 <div class="container">
 <div class="media">
-    <img width="100" height="100"  src="{{asset('/img/productos/'.$producto->image)}}" class="align-self-start mr-3" alt="...">
+    <img width="100" height="100"  src="{{secure_asset('/img/productos/'.$producto->image)}}" class="align-self-start mr-3" alt="...">
     <div class="media-body">
       <h5 class="mt-0">Descripción:</h5>
       <p>{{$producto->descriptions}}</p>
@@ -119,7 +119,7 @@
 @section('footer')
 <footer class="footer">
     <div class="l-footer">
-        <!--<img  class="footer_img" src="{{asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
+        <!--<img  class="footer_img" src="{{secure_asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
         <h2 style="color: white" class="footer_img">JLDM</h2>
     <p>Hola Soy JLDIAZ diseñador web esta pagina web esta totalmente gratis para que puedan implementar a algun proyecto universitario la unica de
         condicon de uso es que mejoren algo a esta pagina web para que asi fortalezcan sus conocimientos.

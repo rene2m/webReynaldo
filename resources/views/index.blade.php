@@ -38,7 +38,7 @@
     <header>
     <a href="#" class="logo">
         <h2 style="color: white" class="imgtamaño">REYHOGAR</h2>
-        <!--<img  class="imgtamaño" src="{{ asset('img/jldm.png')}}" alt="JLDM ! Proyects">-->
+        <!--<img  class="imgtamaño" src="{{ secure_asset('img/jldm.png')}}" alt="JLDM ! Proyects">-->
     </a>
     <div class="menu-toggle" ></div>
         <nav>
@@ -120,7 +120,7 @@
     <div class="row_cards">
         <div class="col-md-3 col-sm-6 mb-3">
             <div class="single-content">
-                <img src="{{ asset('img/categoria/cat1.jpg')}}" alt="">
+                <img src="{{ secure_asset('img/categoria/cat1.jpg')}}" alt="">
                 <div class="text-content">
                     <h3>Casas</h3>
                     <hr class="style2">
@@ -130,7 +130,7 @@
         </div>
         <div class="col-md-3 col-sm-6 mb-3">
             <div class="single-content">
-                <img src="{{ asset('img/categoria/cat2.jpg')}}" alt="">
+                <img src="{{ secure_asset('img/categoria/cat2.jpg')}}" alt="">
                 <div class="text-content">
                     <h3>Apartamentos</h3>
                     <hr class="style2">
@@ -140,7 +140,7 @@
         </div>
         <div class="col-md-3 col-sm-6 mb-3">
             <div class="single-content">
-                <img src="{{ asset('img/categoria/cat3.jpg')}}" alt="">
+                <img src="{{ secure_asset('img/categoria/cat3.jpg')}}" alt="">
                 <div class="text-content">
                     <h3>Locales  Comerciales</h3>
                     <hr class="style2">
@@ -150,7 +150,7 @@
         </div>
         <div class="col-md-3 col-sm-6 mb-3">
             <div class="single-content">
-                <img src="{{ asset('img/categoria/cat4.jpg')}}" alt="">
+                <img src="{{ secure_asset('img/categoria/cat4.jpg')}}" alt="">
                 <div class="text-content">
                     <h3>Terrenos</h3>
                     <hr class="style2">
@@ -185,7 +185,7 @@
                 <h5 style="color: white">En Este segmento puedes poner una descripción de lo mas importante acerca de tus proveedores.</h5>
             </div>
             <div class="img">
-                <img src="{{asset('/img/proveedore/'.$proveedore->image)}}" alt="">
+                <img src="{{secure_asset('/img/proveedore/'.$proveedore->image)}}" alt="">
             </div>
         </div>
         @endforeach
@@ -207,7 +207,7 @@
     @foreach($productos as $producto)
     <div class="wrapper">
         <div class="container">
-            <img class="top"src="{{asset('/img/productos/'.$producto->image)}}" alt="{{$producto->image}}">
+            <img class="top"src="{{secure_asset('/img/productos/'.$producto->image)}}" alt="{{$producto->image}}">
           <div class="bottom">
             <div class="left">
               <div class="details">
@@ -237,7 +237,7 @@
 @section('footer')
 <footer class="footer">
     <div class="l-footer">
-        <!--<img  class="footer_img" src="{{asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
+        <!--<img  class="footer_img" src="{{secure_asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
         <h2 style="color: white" class="footer_img">REYHOGAR</h2>
     <p>Un grupo de profesionales te asesorarán en todo el proceso de VENTA, COMPRA y ALQUILER.
        Te ofrecemos realizar un análisis de mercado para determinar el valor de tu propiedad.
@@ -307,7 +307,7 @@
                 <div class="principalPagos">
                     <div id="contenedor" class="row_p">
                         <div id="naranja" class="">
-                            <img class="popou_img"src="{{ asset('img/pagos.jpg')}}" alt="">
+                            <img class="popou_img"src="{{ secure_asset('img/pagos.jpg')}}" alt="">
                         </div>       
                         <div id="verde" class="content_pagos"> 
                             <h2 class=" frm_pagos text-center">FORMAS DE PAGO</h2>
@@ -383,7 +383,7 @@
     <div class="modal-dialog modal-xl">
         <div id="contenedor" class="row_p">
             <div id="naranja" class="">
-                <img class="popou_img"src="{{ asset('img/entrega.jpg')}}" alt="">
+                <img class="popou_img"src="{{ secure_asset('img/entrega.jpg')}}" alt="">
             </div>       
             <div id="verde" class="content_pagos"> 
                 <h2 class=" frm_pagos text-center">REALIZAMOS ENTREGA ESPECIAL</h2>  
@@ -408,7 +408,7 @@
                 @foreach($ofertas as $oferta)
                 <div id="contenedor" class="row_p">
                     <div id="naranja" class="">
-                        <img class="popou_img"src="{{asset('/img/ofertas/'.$oferta->image)}}" alt="{{$oferta->image}}">
+                        <img class="popou_img"src="{{secure_asset('/img/ofertas/'.$oferta->image)}}" alt="{{$oferta->image}}">
                     </div>       
                     <div id="verde" class="content_pagos"> 
                         <strong><h2 class=" frm_pagos text-center">{{$oferta->titulo}}</h2></strong>  

@@ -58,7 +58,7 @@
                         {!! Form::close() !!}
                     </td>
                     <td>
-                        <img class="rounded-circle" src="{{asset('/img/productos/'.$producto->image)}}" alt="{{$producto->image}}" width="100" height="100">
+                        <img class="rounded-circle" src="{{secure_asset('/img/productos/'.$producto->image)}}" alt="{{$producto->image}}" width="100" height="100">
                     </td>
                     <td>{{$producto->name}}</td>
                     <td>{{$producto->categoria->name}}</td>
