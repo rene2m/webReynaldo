@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Clientes;
 use App\Models\Productos;
-use App\Models\Publicofert;
+use App\Models\publicofert;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -28,9 +28,10 @@ class HomeController extends Controller
     public function index()
     {
         $cons_user = User::count();
-        $cons_ofertas = Publicofert::count();
+        $cons_ofertas = publicofert::count();
         $cons_productos = Productos::count();
         $cons_clientes = Clientes::count();
+        dd($cons_ofertas);
         return view('home',compact('cons_user','cons_ofertas','cons_productos','cons_clientes'));
     }
 }
