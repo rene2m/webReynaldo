@@ -49,7 +49,7 @@
         var typed = new Typed('.type', {
         strings: ['<span><i class="fas fa-building"></i></span> COMPRA', 
                     '<span><i class="fas fa-building"></i></span> TU HOGAR'
-                    ,'<span><i class="fas fa-coffee"></i></span> CON NOSOTROS'],
+                    ,'<span><i class="fas fa-building"></i></span> CON NOSOTROS'],
         typeSpeed:50,backSpeed:50,loop:true});
     </script>
 </body>

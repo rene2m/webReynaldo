@@ -2,7 +2,7 @@
 @section('redes')
 <div class="red">
     <div id="facebook">
-        <a href="#" target="none" class="fab fa-facebook-f "></a>
+        <a href="https://www.facebook.com/profile.php?id=100078648653054" target="none" class="fab fa-facebook-f "></a>
     </div>
     <div id="instagram">
         <a href="#" target="none" class="fab fa-instagram"></a>
@@ -11,7 +11,7 @@
         <a href="" target="none" class="fab fa-twitter-square"></a>
     </div>
     <div id="whatsaap">
-        <a href="#" target="none" class="fab fa-whatsapp"></a>
+        <a href="https://api.whatsapp.com/send?phone=59163173664&text=Deseo%20Informacion%20Sobre%20Bienes%20Inmuebles" target="none" class="fab fa-whatsapp"></a>
     </div>
     <div id="linkeding">
         <a href="#" target="none" class="fab fa-linkedin"></a>
@@ -28,7 +28,7 @@
             </div>
             <div class="headcont">
                 <i class="fas fa-2x fa-envelope messenge"></i>
-                reyHogar@gmail.com
+                reyyvalles@gmail.com
             </div>
         </div>
     </div>
@@ -37,16 +37,18 @@
 @section('navbar')
     <header>
     <a href="#" class="logo">
+    <img  class="imgtamaño" src="{{ secure_asset('img/logo.png')}}" alt="">
         <h2 style="color: white" class="imgtamaño">REYHOGAR</h2>
-        <!--<img  class="imgtamaño" src="{{ secure_asset('img/jldm.png')}}" alt="JLDM ! Proyects">-->
+       
     </a>
     <div class="menu-toggle" ></div>
         <nav>
             <ul>
                 <li><a href="{{ url('/')}}" >INICIO</a></li>
                 <li><a class="active" href="{{ url('/contact')}}">CONTÁCTENOS</a></li>
-                <li><a href="{{ url('/productos')}}">PRODUCTOS</a></li>
+                <li><a href="{{ url('/productos')}}">BIENES RAICES</a></li>
                 <li><a href="{{ url('/nosotros')}}">NOSOTROS</a></li>
+                <li><a href="{{ url('/profesiones')}}">SERVICIOS PROFESIONALES</a></li>
             </ul>
         </nav>
         <div class="clearfix"></div>
@@ -135,13 +137,13 @@
                 </div>
                 <div class="contact_information">
                     <i class="far fa-2x fa-envelope"></i>
-                    <p>reyHogar@gmail.com</p>
+                    <p>reyyvalles@gmail.com</p>
                 </div>
             </div>
             <div class="social_media">
                 <p>REDES SOCIALES</p>
                 <div class="social-icons">
-                    <a href="#" target="none">
+                    <a href="https://www.facebook.com/profile.php?id=100078648653054" target="none">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                     <a href="#" target="none">
@@ -157,7 +159,9 @@
             </div>
         </div>
         <div class="contact-form">
-            <form action="" autocomplete="off">
+            <!-- <form action="" autocomplete="off"> -->
+            {!! Form::open(['route' => 'contacto.store']) !!}
+            {{Form::token()}} 
                 <h3 class="contact_tittle">COMUNÍCATE CON NOSOTROS</h3>
                 <div class="input-container ">
                     <input type="text" name="name" class="contact_input" placeholder="NOMBRE">
@@ -171,8 +175,13 @@
                 <div class="input-container">
                     <textarea name="mensaje" class="contact_input" id="" placeholder="MENSAJE"></textarea>
                 </div>
-                <input type="submit" value="ENVIAR" class="contact_btn">
-            </form>
+                <!-- <input type="submit" value="ENVIAR" class="contact_btn"> -->
+                <div class="form-group">
+                {!! Form::submit('Guardar', array('class' =>'btn btn-outline-primary')) !!}
+                <!-- <input type="submit" value="ENVIAR" class="contact_btn"> -->
+                </div>
+                {!! Form::close()!!} 
+            <!-- </form> -->
         </div>
     </div>
 </div>
@@ -180,8 +189,8 @@
 @section('footer')
 <footer class="footer">
     <div class="l-footer">
-        <!--<img  class="footer_img" src="{{secure_asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
-        <h2 style="color: white" class="footer_img">REYHOGAR</h2>
+        <img  class="footer_img" src="{{secure_asset('img/logo.png')}}" alt="">
+        <!-- <h2 style="color: white" class="footer_img">REYHOGAR</h2> -->
     <p>Un grupo de profesionales te asesorarán en todo el proceso de VENTA, COMPRA y ALQUILER.
        Te ofrecemos realizar un análisis de mercado para determinar el valor de tu propiedad.
     </p>
@@ -192,7 +201,7 @@
                 <ul class="box">
                     <li class="button_social">
                         <i class="fab mr-2 fa-facebook"></i>
-                        <a href="" target="_blank">Facebook</a>
+                        <a href="https://www.facebook.com/profile.php?id=100078648653054" target="_blank">Facebook</a>
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-twitter"></i>
@@ -223,7 +232,7 @@
                 </li>
         </ul>
         <div class="b-footer">
-            <p>Todos los Derechos reservados by ©REYHOGAR-2022</p>
+            <p>Todos los Derechos reservados by ©DESOCOM-2022</p>
         </div>
 </footer>
 @endsection

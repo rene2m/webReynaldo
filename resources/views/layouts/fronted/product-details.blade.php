@@ -9,7 +9,7 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-        <title>JLDM |Detalle de Producto</title>
+        <title>REYHOGAR |Detalle de Producto</title>
 
         <!-- Fonts--> 
         <link href="{{secure_asset('css/style.css') }}" rel="stylesheet">
@@ -23,8 +23,9 @@
             @yield('navbar')
             @yield('banner')
         </section>
-        @yield('content')
-        <br>
+        <section id="productoDetalle">
+         @yield('content')
+        </section>
        @yield('footer')
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>

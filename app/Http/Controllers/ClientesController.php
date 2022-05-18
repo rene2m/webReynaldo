@@ -19,6 +19,22 @@ class ClientesController extends Controller
     }
     public function store(Request $request)
     {
+        // dd("ingresando a esta ruta ");
+        $cliente = new Clientes();
+            
+        $cliente->user_id = auth()->id();
+        $cliente->nombre = request('nombre');
+            if($request->hasFile('image')){
+                $file = $request->image;
+                $file->move(public_path(). '/img/clientes', $file->getClientOriginalName());
+                $cliente->image = $file->getClientOriginalName();
+    }
+        $cliente->save();
+        return redirect('clientes/todas');
+    }
+    public function create(Request $request)
+    {
+        dd("ingresando a esta ruta ");
         $cliente = new Clientes();
             
         $cliente->user_id = auth()->id();

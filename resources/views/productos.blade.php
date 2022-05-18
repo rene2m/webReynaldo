@@ -2,7 +2,7 @@
 @section('redes')
 <div class="red">
     <div id="facebook">
-        <a href="#" target="none" class="fab fa-facebook-f "></a>
+        <a href="https://www.facebook.com/profile.php?id=100078648653054" target="none" class="fab fa-facebook-f "></a>
     </div>
     <div id="instagram">
         <a href="#" target="none" class="fab fa-instagram"></a>
@@ -11,7 +11,7 @@
         <a href="" target="none" class="fab fa-twitter-square"></a>
     </div>
     <div id="whatsaap">
-        <a href="#" target="none" class="fab fa-whatsapp"></a>
+        <a href="https://api.whatsapp.com/send?phone=59163173664&text=Deseo%20Informacion%20Sobre%20Bienes%20Inmuebles" target="none" class="fab fa-whatsapp"></a>
     </div>
     <div id="linkeding">
         <a href="#" target="none" class="fab fa-linkedin"></a>
@@ -28,7 +28,7 @@
             </div>
             <div class="headcont">
                 <i class="fas fa-2x fa-envelope messenge"></i>
-                reyHogar@gmail.com
+                reyyvalles@gmail.com
             </div>
         </div>
     </div>
@@ -37,16 +37,17 @@
 @section('navbar')
     <header>
     <a href="#" class="logo">
+    <img  class="imgtamaño" src="{{ secure_asset('img/logo.png')}}" alt="">
         <h2 style="color: white" class="imgtamaño">REYHOGAR</h2>
-        <!--<img  class="imgtamaño" src="{{ secure_asset('img/Logo-Higienika_office_peru_div.png')}}" alt="JLDM ! Proyects">-->
     </a>
     <div class="menu-toggle" ></div>
         <nav>
             <ul>
                 <li><a href="{{ url('/')}}" >INICIO</a></li>
                 <li><a href="{{ url('/contact')}}">CONTÁCTENOS</a></li>
-                <li><a class="active" href="{{ url('/productos')}}">PRODUCTOS</a></li>
+                <li><a class="active" href="{{ url('/productos')}}">BIENES RAICES</a></li>
                 <li><a href="{{ url('/nosotros')}}">NOSOTROS</a></li>
+                <li><a href="{{ url('/profesiones')}}">SERVICIOS PROFESIONALES</a></li>
             </ul>
         </nav>
         <div class="clearfix"></div>
@@ -58,10 +59,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hero-text">
-                        <h4>PAGINA <span>WEB</span></h4>
+                        <!-- <h4>PAGINA <span>WEB</span></h4> -->
 					    <br><br>
-                        <h1 class="tipeo1">VARIEDAD DE PRODUCTOS</h1>
-                        <h1 class="tipeo2"><span class="type"></span></h1>
+                        <h1 class="tipeo1">INMUEBLES EN STOCK</h1>
+                        <!-- <h1 class="tipeo2"><span class="type"></span></h1> -->
                     </div>
                 </div>
             </div>
@@ -77,7 +78,7 @@
                 <div class="product-image8">
                     <a href="#">
                         <img  class="pic-1" src="{{secure_asset('/img/productos/'.$producto->image)}}" alt="{{$producto->image}}">
-                        <!--<img class="pic-2" src="https://via.placeholder.com/280x300/FFF5EE/000000">-->
+                        <!-- <img class="pic-2" src="https://via.placeholder.com/280x300/FFF5EE/000000"> -->
                     </a>
                     <ul class="social">
                         <li><a href="" class="fa fa-search"></a></li>
@@ -86,7 +87,7 @@
                 </div>
                 <div class="product-content">
                     <div class="price">{{$producto->name}}</div>
-                    <!--<<span class="product-shipping">Free Shipping</span>-->
+                    <!-- <span class="product-shipping">Free Shipping</span> -->
                     <h3 class="title"><a href="{{ route('searchCategory' ,$producto->categoria->name)}}">{{$producto->categoria->name}}</a></h3>
                     <a class="all-deals" href="{{route('product-details', $producto->slug)}}">Detalles<i class="fa fa-angle-right icon"></i></a>
                 </div>
@@ -100,8 +101,8 @@
 @section('footer')
 <footer class="footer">
     <div class="l-footer">
-        <!--<img  class="footer_img" src="{{secure_asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
-        <h2 style="color: white" class="footer_img">REYHOGAR</h2>
+        <img  class="footer_img" src="{{secure_asset('img/logo.png')}}" alt="">
+        <!-- <h2 style="color: white" class="footer_img">REYHOGAR</h2> -->
     <p>Un grupo de profesionales te asesorarán en todo el proceso de VENTA, COMPRA y ALQUILER.
        Te ofrecemos realizar un análisis de mercado para determinar el valor de tu propiedad.
     </p>
@@ -112,7 +113,7 @@
                 <ul class="box">
                     <li class="button_social">
                         <i class="fab mr-2 fa-facebook"></i>
-                        <a href="" target="_blank">Facebook</a>
+                        <a href="https://www.facebook.com/profile.php?id=100078648653054" target="_blank">Facebook</a>
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-twitter"></i>
@@ -143,7 +144,7 @@
                 </li>
         </ul>
         <div class="b-footer">
-            <p>Todos los Derechos reservados by ©REYHOGAR-2022</p>
+            <p>Todos los Derechos reservados by ©DESOCOM-2022</p>
         </div>
 </footer>
 @endsection

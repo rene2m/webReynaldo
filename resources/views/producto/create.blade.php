@@ -2,7 +2,7 @@
 @section('content')
 <div class="container ">
     <h1>
-        Productos<small>[Agregar Productos]</small>
+        INMUEBLES<small>[Agregar Inmueble]</small>
     </h1>
 
 <div class="row text-center">
@@ -21,13 +21,13 @@
         {!! Form::open(['route' => 'producto.store','files'=>'true']) !!}
         {{Form::token()}} 
         <div class="form-group">
-            <label  class="control-label" for="categoria_id">CATEGORÍAS</label>
-            {!! Form::select('categoria_id', $categorias,null,['class' => 'form-control','placeholder' => 'Elija una categoria de producto'])!!}
+            <label  class="control-label" for="categoria_id">CATEGORÍAS DE INMUEBLES</label>
+            {!! Form::select('categoria_id', $categorias,null,['class' => 'form-control','placeholder' => 'Elija una categoria de Inmueble'])!!}
         </div>
         <div class="row">
             <div class="form-group col-md-6">
                 <label for="name">Nombre</label>
-                <input type="text" name="name" class="form-control" required placeholder="Ingrese su Nombre">
+                <input type="text" name="name" class="form-control" required placeholder="Ingrese un Nombre">
             </div>
             <div class="form-group col-md-6">
                 <label for="extract">Sub titulo</label>
@@ -41,7 +41,7 @@
         <div class="row">
             <div class="form-group col-md-6">
                 <label for="price">Precio</label>
-                <input type="number" step="any" name="price" class="form-control" required placeholder="Ingrese su Nombre">
+                <input type="number" step="any" name="price" class="form-control" required placeholder="Ingrese su Precio">
             </div>
             <div class="form-group col-md-6">
                 <label for="image">Imagen:</label>

@@ -28,6 +28,7 @@
                 <th scope="col">Editar</th>
                 <th scope="col">Eliminar</th>
                 <th scope="col">Nombre</th>
+                <th scope="col">Imagen</th>
                 <th scope="col">Descripción</th>
             </tr>
         </thead>
@@ -48,6 +49,9 @@
                         {!! Form::close() !!}
                     </td>
                     <td>{{$categoria->name}}</td>
+                    <td>
+                        <img class="rounded-circle" src="{{secure_asset('/img/categorias/'.$categoria->image)}}" alt="{{$categoria->image}}" width="100" height="100">
+                    </td>
                     <td>{{$categoria->descripcion}}</td>
                 </tr>
                 @endforeach

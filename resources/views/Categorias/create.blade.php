@@ -34,7 +34,9 @@
                 </div>
             @endif
         </div> 
-        {!! Form::open(['route' => 'Categorias.store']) !!}
+        {!! Form::open(['route' => 'Categorias.store','files'=>'true']) !!}
+   
+        {{Form::token()}} 
 
             <div class="form-group">
                 <label for="name">Nombre de la Categoría:</label>
@@ -61,6 +63,13 @@
                     )    
                 !!}
             </div>
+
+            <div class="row">
+            <div class="form-group col-md-6">
+                <label for="image">Imagen:</label>
+                {{ Form::file('image',null,['required' => 'required'])}}
+            </div>
+        </div>
 
             <div class="form-group">
                 {!! Form::submit('Guardar', array('class' =>'btn btn-outline-primary')) !!}

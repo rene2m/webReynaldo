@@ -2,7 +2,7 @@
 @section('redes')
 <div class="red">
     <div id="facebook">
-        <a href="#" target="none" class="fab fa-facebook-f "></a>
+        <a href="https://www.facebook.com/profile.php?id=100078648653054" target="none" class="fab fa-facebook-f "></a>
     </div>
     <div id="instagram">
         <a href="#" target="none" class="fab fa-instagram"></a>
@@ -11,7 +11,7 @@
         <a href="" target="none" class="fab fa-twitter-square"></a>
     </div>
     <div id="whatsaap">
-        <a href="#" target="none" class="fab fa-whatsapp"></a>
+        <a href="https://api.whatsapp.com/send?phone=59163173664&text=Deseo%20Informacion%20Sobre%20Bienes%20Inmuebles" target="none" class="fab fa-whatsapp"></a>
     </div>
     <div id="linkeding">
         <a href="#" target="none" class="fab fa-linkedin"></a>
@@ -28,7 +28,7 @@
             </div>
             <div class="headcont">
                 <i class="fas fa-2x fa-envelope messenge"></i>
-                reyHogar@gmail.com
+                reyyvalles@gmail.com
             </div>
         </div>
     </div>
@@ -37,16 +37,18 @@
 @section('navbar')
     <header>
     <a href="#" class="logo">
+        <img  class="imgtamaño" src="{{ secure_asset('img/logo.png')}}" alt="">
         <h2 style="color: white" class="imgtamaño">REYHOGAR</h2>
-        <!--<img  class="imgtamaño" src="{{ secure_asset('img/jldm.png')}}" alt="JLDM ! Proyects">-->
+        
     </a>
     <div class="menu-toggle" ></div>
         <nav>
             <ul>
                 <li><a href="" class="active">INICIO</a></li>
                 <li><a href="{{ url('/contact')}}">CONTÁCTENOS</a></li>
-                <li><a href="{{ url('/productos')}}">PRODUCTOS</a></li>
+                <li><a href="{{ url('/productos')}}">BIENES RAICES</a></li>
                 <li><a href="{{ url('/nosotros')}}">NOSOTROS</a></li>
+                <li><a href="{{ url('/profesiones')}}">SERVICIOS PROFESIONALES</a></li>
             </ul>
         </nav>
         <div class="clearfix"></div>
@@ -158,6 +160,47 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+            <div class="single-content">
+                <img src="{{ secure_asset('img/categoria/cat8.jpg')}}" alt="">
+                <div class="text-content">
+                    <h3>Parqueos</h3>
+                    <hr class="style2">
+                    <h5>Gestion de Estacionamiento</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+            <div class="single-content">
+                <img src="{{ secure_asset('img/categoria/cat5.jpg')}}" alt="">
+                <div class="text-content">
+                    <h3>Garzonier</h3>
+                    <hr class="style2">
+                    <h5>Hermoso y en el mejor punto de la ciudad</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+            <div class="single-content">
+                <img src="{{ secure_asset('img/categoria/cat6.jpg')}}" alt="">
+                <div class="text-content">
+                    <h3>Casa como lote</h3>
+                    <hr class="style2">
+                    <h5>A precio de lote</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+            <div class="single-content">
+                <img src="{{ secure_asset('img/categoria/cat7.jpg')}}" alt="">
+                <div class="text-content">
+                    <h3>Terreno agrario</h3>
+                    <hr class="style2">
+                    <h5>Para la Siembra</h5>
+                </div>
+            </div>
+        </div>
+      
     </div>
 </div>
 @endsection
@@ -237,8 +280,8 @@
 @section('footer')
 <footer class="footer">
     <div class="l-footer">
-        <!--<img  class="footer_img" src="{{secure_asset('img/JLDIAZ.png')}}" alt="JLDM | Proyectos">-->
-        <h2 style="color: white" class="footer_img">REYHOGAR</h2>
+        <img  class="footer_img" src="{{secure_asset('img/logo.png')}}" alt="">
+        <!-- <h2 style="color: white" class="footer_img">REYHOGAR</h2> -->
     <p>Un grupo de profesionales te asesorarán en todo el proceso de VENTA, COMPRA y ALQUILER.
        Te ofrecemos realizar un análisis de mercado para determinar el valor de tu propiedad.
     </p>
@@ -249,7 +292,7 @@
                 <ul class="box">
                     <li class="button_social">
                         <i class="fab mr-2 fa-facebook"></i>
-                        <a href="" target="_blank">Facebook</a>
+                        <a href="https://www.facebook.com/profile.php?id=100078648653054" target="_blank">Facebook</a>
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-twitter"></i>
@@ -280,7 +323,7 @@
                 </li>
         </ul>
         <div class="b-footer">
-            <p>Todos los Derechos reservados by ©REYHOGAR-2022</p>
+            <p>Todos los Derechos reservados by ©DESOCOM-2022</p>
         </div>
 </footer>
 @endsection
@@ -318,16 +361,16 @@
                     <div class="plan">
                       <div class="plan-inner">
                         <div class="entry-title">
-                          <h3>BCP</h3>
+                          <h3>BANCO UNION</h3>
                           <div class="price"><i class="mt-3 fa-2x fas fa-credit-card"></i>
                           </div>
                         </div>
                         <div class="entry-content">
                           <ul>
                             <li>Número de cuenta</li>
-                            <li>******************</li>
+                            <li>10000041694345</li>
                             <li>N° de cta. interbancaria</li>
-                            <li>*********************</li>
+                            <li>10000041694345</li>
                           </ul>
                         </div>
                       </div>

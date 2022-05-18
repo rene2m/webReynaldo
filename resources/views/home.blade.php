@@ -10,7 +10,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Dashboard v1</li>
+                    <li class="breadcrumb-item active">Dashboard REYHOGAR</li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -34,7 +34,7 @@
                     <div class="icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <a href="#" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="{{url('usuarios')}}" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -49,7 +49,7 @@
                     <div class="icon">
                         <i class="fas fa-cash-register"></i>
                     </div>
-                    <a href="#" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="{{url('ofertas/todas')}}" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -59,12 +59,12 @@
                     <div class="inner">
                         <h3>{{$cons_productos}}</h3>
 
-                        <p>Productos</p>
+                        <p>Bienes Inmuebles</p>
                     </div>
                     <div class="icon">
                         <i class="fas fa-box-open"></i>
                     </div>
-                    <a href="#" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="{{url('producto')}}" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -78,7 +78,7 @@
                     <div class="icon">
                         <i class="fas fa-street-view"></i>
                     </div>
-                    <a href="#" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="{{url('clientes/todas')}}" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->

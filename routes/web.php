@@ -27,18 +27,28 @@ Route::get('productos/{slug}',
     'as'   => 'product-details',
     'uses' => 'StoreController@show'
 ]);
-
-/*PRUEBA
-Route::resource('/categorias', 'StoreController');*/
-
-
 Route::get('categorias/{slug}',[
     'uses' => 'StoreController@searchCategory',
 ])->name('searchCategory');
 
 
+Route::get('/profesiones', 'StoreServiciosController@index');
+Route::get('profesiones/{slug}',
+[
+    'as'   => 'profesiones-details',
+    'uses' => 'StoreServiciosController@show'
+]);
+Route::get('servicios/{slug}',[
+    'uses' => 'StoreServiciosController@searchServicio',
+])->name('searchServicio');
+
+
+
+Route::post('/clientes', 'ClientesController@create');
 
 Route::get('/nosotros', 'ClientesController@clientes');
+
+Route::resource('/contacto', 'contactController');
 
 Auth::routes();
 
@@ -46,6 +56,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 /* GESTION*/
 Route::resource('usuarios','UserController')->middleware('auth')->middleware('auth');
+///ruta para servicios profesinoales 
+Route::resource('serviciosP','ClientesController')->middleware('auth')->middleware('auth');
 Route::resource('roles','RoleController')->middleware('auth')->middleware('auth');
 Route::resource('/clientes/todas', 'ClientesController')->middleware('auth');
 Route::resource('/proveedores', 'ProveedoresController')->middleware('auth');
@@ -53,5 +65,11 @@ Route::resource('/ofertas/todas', 'PublicofertController')->middleware('auth');
 
 Route::resource('/Categorias', 'CategoriasController')->middleware('auth');
 Route::resource('/producto', 'ProductoController')->middleware('auth');
+
+//rutas para accede a los servicios profesionales y profesiones 
+
+Route::resource('/Servicios', 'ServiciosController')->middleware('auth');
+Route::resource('/profesion', 'ProfesionesController')->middleware('auth');
+
 
 /*ADMIN*/

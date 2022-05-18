@@ -5,7 +5,9 @@ use App\Http\Requests\CategoriaEditRequest;
 
 use App\Models\Categorias;
 use Illuminate\Http\Request;
+use App\Http\Requests\SaveCategoriaRequest;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 
 class CategoriasController extends Controller
@@ -25,17 +27,26 @@ class CategoriasController extends Controller
     }
 
     public function store(Request $request){
+
+
+        // dd($request);
         
         $this->validate($request,[
-            'name' => 'required|unique:categorias|max:255|regex:/^[\pL\s\-]+$/u'
+            'name' => 'required|unique:categorias|max:255'
         ]);
-
-        $categoria = Categorias::create([
-            'name' => $request->get('name'),
-            'slug' => Str::slug($request->get('name')),
-            'descripcion' => $request->get('descripcion')
-        ]);
-
+        $categoria = new Categorias();
+        
+        $categoria->name          = request('name');
+        $categoria->slug          = Str::slug($request->get('name'));
+        $categoria->descripcion  = request('descripcion');
+            if($request->hasFile('image')){
+                $file = $request->image;
+                $file->move(public_path(). '/img/categorias', $file->getClientOriginalName());
+                $categoria->image = $file->getClientOriginalName();
+    }
+    // dd($categoria);
+        $categoria->save();
+       
         $messege = $categoria ? 'Categoria agregada correctamente' : 'la cetegoria no se agrego';
         return redirect()->route('Categorias.index')->with('messege', $messege);
     }

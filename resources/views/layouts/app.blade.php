@@ -197,6 +197,26 @@
                                     </p>
                                 </a>
                             </li>
+                            <li class="nav-item admin">
+                                <a href="{{url('Servicios')}}"
+                                    class="{{ Request::path() === 'Servicios' ? 'nav-link active' : 'nav-link' }}">
+                                    <i class="text-info fas fa-shopping-bag"></i>
+                                    <p>
+                                       Servicios Profesionales
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item admin">
+                                <a href="{{url('profesion')}}"
+                                    class="{{ Request::path() === 'profesion' ? 'nav-link active' : 'nav-link' }}">
+                                    <i class="text-info fas fa-shopping-basket"></i>
+                                    <p>
+                                      Profesiones
+                                      <?php $product_count = DB::table('profesiones')->count(); ?>
+                                        <span class="right badge badge-danger">{{ $product_count ?? '0' }}</span>
+                                    </p>
+                                </a>
+                            </li>
                             @endcan 
 
                             @can('personal')

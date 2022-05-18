@@ -44,7 +44,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/jldm_slider.jpg);
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/nosotros.jpg);
     background-size: cover;
     background-position: center;
     min-height: 400px;
@@ -1201,18 +1201,20 @@ textarea.contact_input{
 /***********************************************
 *****************CATEGORIAS*********************
 ************************************************/
-.body_categorias {
+.body_categorias {  /* fondo de toda la seccion de categorias */ 
     color: #272727;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0;
     padding: 1rem;
+    /* background-color: red; */
   }
   
-  .main {
+  .main { /*  fondo de el card principal*/
     max-width: 1200px;
     margin: 0 auto;
+    /* background-color: red; */
   }
   
   .main h1 {
@@ -1220,13 +1222,15 @@ textarea.contact_input{
     font-weight: 400;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    /* background-color: red; */
   }
-  .main  .title_category{
+  .main  .title_category{ /*  titulo de la categoria*/
     font-size: 34px;
-    color: #4e928b;
+    color: #1cadad;
   }
   .main img {
     height: auto;
+    /* width: 500px; */
     max-width: 100%;
     vertical-align: middle;
   }
@@ -1247,20 +1251,28 @@ textarea.contact_input{
   }
   
   .main .btn:hover {
-    background-color: rgba(255, 255, 255, 0.12);
+    background-color: rgba(128, 205, 227, 0.12);
   }
   
+  .main .card_content{
+      height: 240px;  /* seccio del texto de la  los detalles de los terrenos  */
+      width: auto;
+    /* background-color: red; */
+  }
   .main .cards {
     display: flex;
+    /* height: 4000; */
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
+    /* background-color: red; */
   }
   
   .main .cards_item {
     display: flex;
     padding: 1rem;
+/* color: red; */
   }
   
   @media (min-width: 40rem) {
@@ -1286,7 +1298,7 @@ textarea.contact_input{
   
   .card_content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, #0781b6 40%,#04a5eb 100%);
+    background: linear-gradient(to bottom left, #3a5b68 40%,#3a5b68 100%);
   }
   
   .card_title {
@@ -1316,19 +1328,27 @@ textarea.contact_input{
 ***********LISTA DE PRODUCTOS*******************
 ************************************************/
 
+#imnuebles{
+    padding-top: 10px;
+    padding-block-end: 10px;
+    background-color: rgb(191, 231, 231);
+}
+
 .product-grid8{
 	font-family:Poppins,sans-serif;
 	position:relative;
     z-index:1;
     margin-bottom: 30px;
+    background-color: rgb(169, 193, 211);
 }
 .product-grid8 .product-image8{
-	border:1px solid #e4e9ef;
+	border:1px solid #1c2937;
 	position:relative;
     transition:all .3s ease 0s;
+    /* background-color: red; */
 }
 .product-grid8:hover .product-image8{
-	box-shadow:0 0 10px rgba(0,0,0,.15)
+	box-shadow:0 0 10px rgba(215, 69, 69, 0.15)
 }
 .product-grid8 .product-image8 a{
 	display:block
@@ -1382,16 +1402,21 @@ textarea.contact_input{
 	display:block;
 	padding:4px 15px 4px 30px;
 	color:#fff;
-	background-color:#0081c2;
+	background-color:#d0f110;
 	position:absolute;
 	top:10px;
 	right:0;
 	-webkit-clip-path:polygon(34% 0,100% 0,100% 100%,0 100%);
 	clip-path:polygon(34% 0,100% 0,100% 100%,0 100%)
 }
-.product-grid8 .product-content{padding:20px 0 0}
+.product-grid8 .product-content{
+    padding:15px 0 0;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+}
 .product-grid8 .price{
-	color:#000;
+	color:rgb(24, 24, 24);
+    padding-left: 10px;
 	font-size:19px;
 	font-weight:400;
 	margin-bottom:8px;
@@ -1400,6 +1425,7 @@ textarea.contact_input{
 }
 .product-grid8 .price span{
 	color:#999;
+    padding-left: 10px;
 	font-size:14px;
 	font-weight:500;
 	text-decoration:line-through;
@@ -1423,6 +1449,7 @@ textarea.contact_input{
 	left:0
 }
 .product-grid8 .title{
+    padding-left: 10px;
 	font-size:16px;
 	font-weight:400;
 	text-transform:capitalize;
@@ -1430,7 +1457,7 @@ textarea.contact_input{
 	transition:all .3s ease 0s
 }
 .product-grid8 .title a{color:#000}
-.product-grid8 .title a:hover{color:#0081c2}
+.product-grid8 .title a:hover{color:#40d7d2}
 .product-grid8 .all-deals{
 	display:block;
 	color:#fff;
@@ -1443,7 +1470,7 @@ textarea.contact_input{
 	transition:all .5s ease 0s
 }
 .product-grid8 .all-deals .icon{margin-left:7px}
-.product-grid8 .all-deals:hover{background-color:#0081c2}
+.product-grid8 .all-deals:hover{background-color:#569093}
 @media only screen and (max-width:990px){
 	.product-grid8{margin-bottom:30px}
 }
@@ -1451,21 +1478,31 @@ textarea.contact_input{
 *************DETALLES DEL PRODUCTO**************
 ************************************************/
 
+#productoDetalle{
+    padding-top: 10px;
+    padding-block-end: 10px;
+    background-color: rgb(191, 231, 231);
+}
 .container_product{
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 35px;
   padding: 15px;
   display: flex;
+  /* background-color: red; */
 }
 .left-column {
     width: 65%;
     position: relative;
+    /* background-color: red; */
   }
   
   .right-column {
     width: 35%;
     margin-top: 60px;
+    padding-left: 30px;
+
+    /* background-color: red; */
   }
 
   
@@ -1486,12 +1523,13 @@ textarea.contact_input{
   
   /* Product Description */
   .product-description {
-    border-bottom: 1px solid #E1E8EE;
+    border-bottom: px solid #1b2126;
     margin-bottom: 20px;
+    /* padding-inline-end: 10px; */
   }
   .product-description span {
     font-size: 12px;
-    color: #358ED7;
+    color: #181c20;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;

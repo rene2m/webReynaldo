@@ -53,8 +53,8 @@ class ProductoController extends Controller
     public function update(Request $request,$id)
     {
         $producto = Productos::findOrFail($id);
-
-        $producto->categoria_id  = auth()->id();
+    //    dd($producto);
+        $producto->categoria_id  = $producto->categoria_id;
         $producto->name          = $request->get('name');
         $producto->slug          = Str::slug($request->get('name'));
         $producto->descriptions  = $request->get('descriptions');

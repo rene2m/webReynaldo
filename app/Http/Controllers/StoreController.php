@@ -28,6 +28,10 @@ class StoreController extends Controller
         $productos = Productos::where('categoria_id',$categorias)
                     ->orderBY('id', 'DESC')
                     ->simplePaginate(6);
+
+                    // foreach($productos as $producto)
+
+                    // dd($producto->categoria);
         return view('productos', compact('categorias' , 'productos')); 
     }
 }
