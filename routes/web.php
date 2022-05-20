@@ -48,7 +48,7 @@ Route::post('/clientes', 'ClientesController@create');
 
 Route::get('/nosotros', 'ClientesController@clientes');
 
-Route::resource('/contacto', 'contactController');
+Route::resource('/contacto', 'ContactController');
 
 Auth::routes();
 
