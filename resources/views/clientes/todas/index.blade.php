@@ -27,8 +27,8 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h3 class="card-title">{{$cliente->nombre}}</h3><br><hr>
-                            <p class="card-text"><small class="text-muted">Fecha Ingreso:{{ $cliente->created_at}}</small></p>
-                            <p class="card-text"><small class="text-muted">Fecha Actualizado:{{ $cliente->updated_at}}</small></p>
+                            <p class="card-text"><small class="text-muted">Correo: {{ $cliente->email}}</small></p>
+                            <p class="card-text"><small class="text-muted">Telefono: {{ $cliente->celular}}</small></p>
                             <!--<h5 class="card-title">Usuarios que lo publico:{{$cliente->user_id}}</h5><br>-->
                         </div>
                     </div>

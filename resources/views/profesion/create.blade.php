@@ -40,8 +40,8 @@
         </div>
         <div class="row">
             <div class="form-group col-md-6">
-                <label for="price">Precio</label>
-                <input type="number" step="any" name="price" class="form-control" required placeholder="Ingrese su Nombre">
+                <label for="price">Pretencion Salarial</label>
+                <input type="number" step="any" name="price" class="form-control" required placeholder="pretencion salarial">
             </div>
             <div class="form-group col-md-6">
                 <label for="image">Imagen:</label>
